@@ -1,0 +1,81 @@
+2008년 iPhone
+2009 - Google
+
+
+JAVA 문법
+OOP 개념:객체지향언어
+ - object oriented Programing (4)
+
+ - (1) Encapsulation 클래스를 은닉화해라
+ - (2) Inheriutance 클래스를 상속구조로 작성해라
+ - (3) Abstraction 인터페이스를 통한 추상화를 하라
+ - (4) Poly Morphism 다형성을 염두에 두고 클래스를 작성하라.
+
+
+MVC패턴 : web 서버 구축시
+-Model ( 서버)
+-view(화면)
+-controller(데이터전송) URL
+
+MVVM패턴 : web 서버 구축시
+-Model ( 서버)
+-view(화면)
+-viewModel (일체화 된 데이터 전송)
+   -
+
+설정 패키지
+
+(1)JDK : Java 8
+(2)SDK A: Android Studio
+(3) Emulater : Genymotion
+(4) Version control : Git
+
+Shortcuts(단축키)
+Win+R > cmd > java-version
+CAS : Crtl + art + s
+ - 1) auto import
+ - 2) Appearance , show line number
+ - 3) font
+
+Go line; Ctrl+g
+copy Ctrl + D
+Delate line Ctrl+y
+auto complete= Alt+ Enter
+auto import= alt + insert
+
+
+Convention Naming :
+대~대~ : Pascal -> 클래스/인터페이스
+소~대~ :Carmel 낙타표기법 /변수
+under score : Static Source 표기법
+
+
+
+1.Object는 속성(property)과 기능(method)의 합이다.
+2.Property는 Field에 존재하고
+3.Method는 Area에 존재한다.
+
+field는 속성을 담당하므로 연산을 하지않고 선언만 한다.
+area는 기능을 담당하므로 반드시 연산을 해야한다.
+
+
+JAVA 선언하는 방법
+class ID {}
+void ID() {}
+switch() {} for(){}, if(){} etc..
+
+
+
+
+
+▶When Create
+git init
+git add -A
+git commit -m "final commit"
+git push -u origin master
+
+▶When Update
+git add -A
+git remote add origin https://github.com/veryberryvery22/calculator.git
+git push -u origin master
+
