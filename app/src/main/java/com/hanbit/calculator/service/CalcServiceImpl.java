@@ -6,7 +6,7 @@ import com.hanbit.calculator.domain.CalcDTO;
  * Created by hb2018 on 2016-12-10.
  */
 
-public class CelcServiceImpl implements CalcService{
+public class CalcServiceImpl implements CalcService{
     @Override
     public int plus(CalcDTO param) {
         return param.getNum1() + param.getNum2();

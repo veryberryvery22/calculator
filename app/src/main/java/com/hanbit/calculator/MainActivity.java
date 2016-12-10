@@ -9,8 +9,7 @@ import android.widget.TextView;
 
 import com.hanbit.calculator.domain.CalcDTO;
 import com.hanbit.calculator.service.CalcService;
-
-import static com.hanbit.calculator.R.id.etNum3;
+import com.hanbit.calculator.service.CalcServiceImpl;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText etNum1,etNum2;
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         etNum1 =(EditText) findViewById(R.id.etNum1);
-        etNum2 =(EditText) findViewById(R.id.etNum2);
+        etNum2 =(EditText) findViewById(R.id.etNum3);
 
         btPlus= (Button) findViewById(R.id.btPlus);
         btMinus= (Button) findViewById(R.id.btMinus);
@@ -39,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btMulti.setOnClickListener(this);
         btDivide.setOnClickListener(this);
         btEqual.setOnClickListener(this);
-        service = new CalServiceImpl();
+        service = new CalcServiceImpl();
         cal = new CalcDTO();
 
 
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int num1 = Integer.parseInt(etNum1.getText().toString());
         int num2 = Integer.parseInt(etNum2.getText().toString());
         cal.setNum1(num1);
-        cal.getNum2(num2);
+        cal.setNum2(num2);
 
 
 
